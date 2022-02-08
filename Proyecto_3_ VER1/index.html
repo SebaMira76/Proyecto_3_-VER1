@@ -1,0 +1,168 @@
+<!-- Construye una página de aterrizaje de producto -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- fonts -->
+
+  
+  <title>Vapeadores VA</title>
+</head>
+
+<body>
+  
+  <main>
+      <!-- Encabezado -->
+  <!-- Historia de Usuario #1: Mi página de aterrizaje de producto debería tener un elemento header con un respectivo id="header" -->
+  <header id="header">
+    <div class="div-Encabezado">
+      <div class="img-Logo">
+        <!-- Historia de Usuario #2: Puedo ver una imagen dentro del elemento header con un respectivo id="header-img". El logotipo de una empresa sería una buena opción de imagen aquí. -->
+        <img id="header-img" src="https://i.pinimg.com/474x/bc/fc/8a/bcfc8a235cc614d52c402f04e9a23dc4--shirt-ideas-logos.jpg" alt="">
+      </div>
+      <div class="div-Titulo">
+        <h1>Vape Addict</h1>
+        <p>Venta de Vapeadores e Insumos</p>
+      </div>
+      
+    <!-- Historia de Usuario #3: Dentro del elemento #header puedo ver un elemento nav con un respectivo id="nav-bar". -->
+      
+    </div>
+    <hr>
+    <div class="div-NavBar">
+      <nav id="nav-bar">
+        <ul>
+          <!--Historia de Usuario #4: Puedo ver al menos tres elementos en los que se puede hacer click dentro del elemento nav, cada uno con la clase nav-link  -->
+          <!-- Historia de Usuario #5: Cuando hago clic en un botón .nav-link en el elemento nav, soy llevado a la sección correspondiente de la página de aterrizaje. -->
+          <li><a class="nav-link" href="#productos">Nuestros Productos</a></li>
+          <li><a class="nav-link" href="#videoMenu">Video</a></li>
+          <li><a class="nav-link" href="#contacto">Contáctenos</a></li>
+          <li><a class="nav-link" href="#sobreNosotros">Sobre Nosotros</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de productos -->
+  <section>
+    <article >
+      <h2 id="productos">Nuestros Productos</h2>
+      <div class="div-listaProduc">
+        <div>
+          <h4>Producto 1</h4>
+          <p>Este es un detalle de las características del producto que está a la venta</p>
+          <img src="https://eltabacosincombustion.es/wp-content/uploads/2019/10/vapeador-iqos.jpg" alt="">
+          <button class="btn-selec">Seleccionar</button>
+        </div>
+        <div>
+          <h4>Producto 2</h4>
+          <p>Este es un detalle de las características del producto que está a la venta</p>
+          <img src="https://eltabacosincombustion.es/wp-content/uploads/2019/10/vapeador-iqos.jpg" alt="">
+          <button class="btn-selec">Seleccionar</button>
+        </div>
+        <div>
+          <h4>Producto 3</h4>
+          <p>Este es un detalle de las características del producto que está a la venta</p>
+          <img src="https://eltabacosincombustion.es/wp-content/uploads/2019/10/vapeador-iqos.jpg" alt="">
+          <button class="btn-selec">Seleccionar</button>
+        </div>
+        <div>
+          <h4>Producto 4</h4>
+          <p>Este es un detalle de las características del producto que está a la venta</p>
+          <img src="https://eltabacosincombustion.es/wp-content/uploads/2019/10/vapeador-iqos.jpg" alt="">
+          <button class="btn-selec">Seleccionar</button>
+        </div>
+        <div>
+          <h4>Producto 5</h4>
+          <p>Este es un detalle de las características del producto que está a la venta</p>
+          <img src="https://eltabacosincombustion.es/wp-content/uploads/2019/10/vapeador-iqos.jpg" alt="">
+          <button class="btn-selec">Seleccionar</button>
+        </div>
+        <div>
+          <h4>Producto 6</h4>
+          <p>Este es un detalle de las características del producto que está a la venta</p>
+          <img src="https://eltabacosincombustion.es/wp-content/uploads/2019/10/vapeador-iqos.jpg" alt="">
+          <button class="btn-selec">Seleccionar</button>
+        </div>
+      </div>
+      <div>
+        <a href="#header"><span class="material-icons-outlined">arrow_circle_up</span></a>
+      </div>
+        
+    </article>
+  </section>
+  <!-- Sección de videos -->
+  <section>
+    <div>
+      
+      <h2 id="videoMenu">Mantenimiento de un vapeador - Limpieza de resistecias</h3>
+    </div>
+    <!-- Historia de Usuario #6: Puedo ver un video de producto incrustado con id="video" -->
+    <div id="video">
+      <iframe width="800" height="400" src="https://www.youtube.com/embed/Qln4_liEuB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div>
+      <a href="#header"><span class="material-icons-outlined">arrow_circle_up</span></a>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section>
+    <div class="form-contacto">
+      <h2 id="contacto">Contactenos</h3>
+      <!-- Historia de usuario #7: Mi página de aterrizaje tiene un elemento form con un respectivo id="form". -->
+      <!-- Historia de Usuario #12: Cuando hago clic en el elemento #submit, el correo electrónico se envía a una página estática (utiliza esta URL de pruebas: https://www. reecodecamp.com/email-submit). -->
+      <form id="form" action="https://www.reecodecamp.com/email-submit">
+        <p>
+            <label>Nombre</label>
+            <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido">
+        </p>
+        <p>
+          <!-- Historia de Usuario #8: Dentro del formulario, hay un campo de entrada input con id="email" donde puedo introducir una dirección de correo electrónico. -->
+          <!-- Historia de Usuario #9: El campo de entrada #email debe tener un texto provisional para que el usuario sepa para qué sirve el campo. -->
+          <!-- Historia de Usuario #10: El campo de entrada #email utiliza la validación de HTML5 para confirmar que el texto introducido es una dirección de correo electrónico. -->
+          <label>eMail</label>
+            <input id="email" type="email" name="email" placeholder="Ingrese su eMail">
+        </p>
+        <p>
+            <label>Telefono <span>(Opcional)</span></label>
+            <input id="telefono" type="tel" name="telefono" placeholder="Ingrese su teléfono">
+        </p>
+
+        <p class="txA-mj">
+            <label>Message</label> 
+            <textarea id="mensaje" name="mensaje" rows="3" placeholder="Dejenos sus comentarios"></textarea>
+        </p>
+        <p>
+          <!-- Historia de Usuario #11: Dentro del formulario, hay un input de envío con un respectivo id="submit". -->
+            <input type="submit" id="submit" value="Enviar" class="btn-enviar">
+        </p>
+      </form>
+    </div>
+  <div>
+    <a href="#header"><span class="material-icons-outlined">arrow_circle_up</span></a>
+  </div>
+  </section>
+ 
+  <!-- Pie de página -->
+  <footer>
+    <div>
+      <h4 id="sobreNosotros">Vape Addict</h4>
+      <p>Empresa de fantasía creada por Sebastian Miranda <br>
+        Proyectos de evaluación de FreeCodeCamp</p>
+    </div>
+    
+  </footer>
+
+  </main>
+</body>
+
+</html>

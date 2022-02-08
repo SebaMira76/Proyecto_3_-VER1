@@ -1,0 +1,400 @@
+/* Historia de Usuario #13: La barra de navegación debe estar siempre en la parte superior del viewport.
+
+Historia de Usuario #14: Mi página de aterrizaje de producto debería tener al menos una media query.
+
+Historia de Usuario #15: Mi página de aterrizaje de producto debería utilizar CSS flexbox al menos una vez.      */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200;300;700&display=swap');
+
+:root {
+  --text-h1: 4em ;
+  --text-h2: 2em;
+  --text-h4: 1.8em;
+  --text-p: 2em;
+  --text-header-li-a: 1em;
+  --text-div-listaProduc-p: 1.1em;
+  --text-div-listaProduc-button: 1em;
+  --icon-material-icons-outlined: 3em;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1a19;
+    font-family: 'Josefin Sans', sans-serif;
+
+  }
+
+  main {
+      background-color: #857451;
+      border: 0.2em solid #44221a8e;
+      box-shadow: 0em 0em 8em 0em rgba(104, 28, 28, 0.637);
+      border-radius: 3em ;
+      margin: 2em 2em; 
+  }
+  /* Encabezado */
+  header {
+    background-color: #fafafa;
+    border-radius: 3em;
+    margin: 2em 2em;
+    padding: 0em;
+    height: 14em;
+  }
+
+  #header-img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 3em;
+      margin-left: 1em;
+  }
+
+  h1 {
+    font-family: 'Bebas Neue', cursive, 'Times New Roman', Times, serif;
+    font-size: var(--text-h1);
+    padding: 0;
+    margin: 0;
+  }
+
+  h2 {
+    color: #811414;
+    font-size: var(--text-h2);
+    padding: 0;
+    margin: 0.5em;
+  }
+
+  header p {
+    color: #811414;
+    font-family: 'Bebas Neue', cursive, 'Times New Roman', Times, serif;
+    font-size: var(--text-p);
+    padding: 0;
+    margin: 0;
+  }
+
+  header ul{
+    list-style-type: none;
+    margin: 1em 3em 0.5em 0em;
+    padding: 0em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+
+
+  header li a{
+    text-decoration: none;
+    font-size: var(--text-header-li-a);
+    font-weight: 700;
+    color: #811414;
+    margin: .6em;
+  }
+
+  .div-Encabezado{
+    display: flex;
+
+  }
+
+  .div-Titulo {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0 0 3em;
+  }
+
+  /* Productos */
+  section {
+    background-color: #fafafa;
+    border-radius: 3em;
+    margin: 2em 6em;
+    padding: 1em;
+  }
+
+  .div-listaProduc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .div-listaProduc div {
+    background: linear-gradient(to right, #a3967b, #fafafa);
+    width: 18em;
+    height: auto;
+    margin: 1em 1em;
+    border: 0.1em solid #44221a8e;
+    box-shadow: 1em 1em 1em 0em #857451;
+    border-radius: 3em ;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .div-listaProduc h4 {
+    text-align: center;
+    font-size: var(--text-h4);
+    padding: 0em;
+    margin: 0.7em 0 0.5em 0;
+  }
+
+  .div-listaProduc p {
+    text-align: star;
+    font-size: var(--text-div-listaProduc-p);
+    font-weight: 700;
+    margin: 0.3em 1.3em;
+  }
+
+  .div-listaProduc img {
+    width: 60%;
+    margin: 1em auto;
+    
+}
+
+.btn-selec {
+  width: 10em;
+  height: 2.5em;
+  margin: 1em auto;
+  border: none;
+  font-size: var(--text-div-listaProduc-button);
+  border-radius: .5em;
+  background-color: #d66f25;
+  color: #fafafa;
+}
+
+.div-listaProduc button:hover {
+  background-color: #a35720;
+  box-shadow: 0.2em 0.2em 0.5em 0.1em #46220977;
+}
+
+#video {
+  margin: 2em 0em;
+  display: flex;
+  justify-content: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  /* margin: 1em 2em; */
+}
+
+#form p{
+  margin: 1em;
+}
+
+#form label{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  
+}
+
+#nombre, #email, #telefono, #mensaje {
+
+  width: 100%;
+  height: 2em;
+  border: none;
+  border-bottom: 1px solid #857451;
+  margin-top: 0.5em;
+}
+
+#mensaje {
+  height: 4em;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: auto;
+  height: 2em;
+  width: 80%;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #d66f25;
+  color: #fafafa;
+  font-size: var(--text-header-li-a);
+}
+
+#submit:hover {
+  background-color: #a35720;
+  box-shadow: 0.2em 0.2em 0.5em 0.1em #46220977;
+}
+
+footer div{
+  justify-content: center;
+  text-align: center;
+  margin: 1em;
+}
+
+footer h4, footer p {
+  margin: 0;
+  padding: 0.5em 4em;
+  color: #fafafa;
+}
+
+.material-icons-outlined {
+  font-size: var(--icon-material-icons-outlined);
+  color:#a35720;
+  width: 100%;
+  text-align: end;
+}
+
+@media(max-width: 1160px) {
+  #video iframe{
+    width: 600px;
+    height: 280px;
+  }
+  header {
+    border-radius: 2em;
+    margin: 0.6em 0.6em;
+    padding: 0em;
+    height: auto;
+  }
+  section {
+    border-radius: 2em;
+    margin: 2em 2em;
+    padding: 1.5em;
+  }
+}
+
+@media(max-width: 1000px) {
+  #video iframe{
+    width: 500px;
+    height: 250px;
+  }
+  header {
+    border-radius: 1em;
+    margin: 0.3em 0.3em;
+    padding: 0em;
+    height: auto;
+  }
+  header ul{
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    border-radius: 1em;
+    margin: 1em 1em;
+    padding: 1em;
+  }
+}
+
+@media(max-width: 550px) {
+  #video iframe{
+    width: 400px;
+    height: 200px;
+  }
+
+  main {
+    border-radius: 1em ;
+    margin: 0.3em 0.3em; 
+  }
+  header {
+    border-radius: 1em;
+    margin: 0.3em 0.3em;
+    padding: 0em;
+    height: auto;
+  }
+
+  #header-img {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 1em;
+      margin-left: 0.3em;
+  }
+  header ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    border-radius: 1em;
+    margin: 1em 1em;
+    padding: 1em;
+  }
+
+  .div-listaProduc div {
+    width: auto;
+    height: auto;
+    margin: 1em 1em;
+    border-radius: 1em ;
+
+  }
+
+  #form {
+    padding: 0 0.3em;
+  }
+  #form p{
+    margin: 0.5em;
+  }
+
+  #nav-bar {
+    padding-bottom: 0.5em;
+  }
+
+}
+
+@media(max-width: 450px) {
+  #video iframe{
+    width: 260px;
+    height: 150px;
+  }
+  :root {
+    --text-h1: 2.4em ;
+    --text-h2: 1.2em;
+    --text-h4: 1em;
+    --text-p: 1.2em;
+    --text-header-li-a: 0.8em;
+    --text-div-listaProduc-p: 0.9em;
+    --text-div-listaProduc-button: 0.8em;
+    --icon-material-icons-outlined: 1.5em;
+  
+  }
+  main {
+    border-radius: 1em ;
+    margin: 0.3em 0.3em; 
+  }
+  header {
+    border-radius: 1em;
+    margin: 0.3em 0.3em;
+    padding: 0em;
+    height: auto;
+  }
+
+  #header-img {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 1em;
+      margin-left: 0.3em;
+  }
+  header ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    border-radius: 1em;
+    margin: 1em 1em;
+    padding: 1em;
+  }
+
+  .div-listaProduc div {
+    width: auto;
+    height: auto;
+    margin: 1em 1em;
+    border-radius: 1em ;
+
+  }
+
+  #form {
+    padding: 0 0.3em;
+  }
+  #form p{
+    margin: 0.5em;
+  }
+
+  #nav-bar {
+    padding-bottom: 0.5em;
+  }
+
+}
